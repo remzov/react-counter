@@ -3,13 +3,13 @@ export default (state, action) => {
 		case 'INCREMENT':
 			return {
 				...state,
-				value: state.value++
+				value: ++state.value
 			}
 		
 		case 'DECREMENT': 
 			return {
 				...state,
-				value: state.value--
+				value: --state.value
 			}
       	default:
         	return state

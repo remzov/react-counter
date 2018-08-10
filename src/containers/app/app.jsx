@@ -5,7 +5,6 @@ import Counter from  '../../components/counter/counter';
 
 class App extends Component {
 	render() {
-		console.log(this.props)
 		return (
 			<Counter
 				value={this.props.value}
