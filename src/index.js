@@ -8,15 +8,10 @@ import update from './reducers/update'
 const mountPoint = document.getElementById('root');
 const initialState = {value: 0};
 const store = createStore(update, initialState)
-
-const render = () => ReactDOM.render(
-    
+ 
+ReactDOM.render(
     <Provider store={store}>
         <App/>
     </Provider>,
     mountPoint
 );
-
-render();
- 
-store.subscribe(render)

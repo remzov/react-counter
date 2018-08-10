@@ -1,13 +1,16 @@
 export default (state, action) => {
     switch (action.type) {
-		case 'INCREMENT': {
-			state.value++;
-			return state
-		}
-		case 'DECREMENT': {
-			state.value--;
-			return state
-		}
+		case 'INCREMENT':
+			return {
+				...state,
+				value: state.value++
+			}
+		
+		case 'DECREMENT': 
+			return {
+				...state,
+				value: state.value--
+			}
       	default:
         	return state
 	}
