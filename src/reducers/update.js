@@ -1,12 +1,14 @@
+import { INCREMENT, DECREMENT } from '../constants/actionTypes';
+
 export default (state, action) => {
     switch (action.type) {
-		case 'INCREMENT':
+		case INCREMENT:
 			return {
 				...state,
 				value: ++state.value
 			}
 		
-		case 'DECREMENT': 
+		case DECREMENT: 
 			return {
 				...state,
 				value: --state.value
